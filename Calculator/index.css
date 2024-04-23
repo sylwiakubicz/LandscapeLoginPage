@@ -1,0 +1,110 @@
+.main-container {
+    background-color: beige;
+}
+
+.btn-flower {
+    background-color: beige;
+    border: none;
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    z-index: 1;
+}
+
+.flower-petal {
+    position: absolute;
+}
+
+.petal-left {
+    width: 1.5rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: pink;
+    position: absolute;
+    left: -1.2rem;
+    transform: rotate(25deg);
+    border: 0.75px solid black;
+}
+
+.petal-right {
+    width: 1.5rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: pink;
+    position: absolute;
+    right: 0.75rem;
+    transform: rotate(-25deg);
+    border: 0.75px solid black;
+}
+
+.flower-petal::after {
+    display: block;
+    content: "";
+    width: 1.5rem;
+    height: 1.875rem;
+    border-radius: 50%;
+    background-color: pink;
+    position: absolute;
+    top: 0.225rem;
+    right: 0.1875rem;
+    border: 0.75px solid black;
+}
+
+.flower-petal::before {
+    display: block;
+    content: "";
+    width: 2.25rem;
+    height: 2.475rem;
+    border-radius: 50%;
+    background-color: pink;
+    position: absolute;
+    top: 0.375rem;
+    right: -0.075rem;
+    z-index: 1;
+}
+
+.petal-1 {
+    top: 0;
+    right: 2rem;
+}
+
+.petal-2 {
+    top: 1.65rem;
+    left: -.1rem;
+    transform: rotate(288deg);
+    z-index: 2;
+}
+
+.petal-3 {
+    bottom: 0.1rem;
+    transform: rotate(216deg);
+    z-index: 3;
+}
+
+.petal-4 {
+    bottom: -1rem;
+    right: 1.65rem;
+    transform: rotate(144deg);
+    z-index: 4;
+}
+
+.petal-5 {
+    left: 6.8rem;
+    bottom: 2.625rem;
+    transform: rotate(72deg);
+    z-index: 5;
+}
+
+.flower-center {
+    position: absolute;
+    top: 2.5rem;
+    right: 2rem;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgb(238, 133, 151);
+    z-index: -1;
+}
+
+
+
