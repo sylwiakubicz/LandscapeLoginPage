@@ -1,5 +1,44 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .main-container {
     background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.calculator-container {
+    border: 1px solid red;
+    width: 30rem;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.calculator-screen {
+    border: 1px solid blue;
+    width: 28rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .7rem;
+}
+
+.calculator-buttons button {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
 }
 
 .btn-flower {
