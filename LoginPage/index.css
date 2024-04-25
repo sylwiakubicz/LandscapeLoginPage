@@ -1,0 +1,152 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(#8E55DA ,#793FB0, #5A2887 60%,#4F2684 70%, #3D207A 80%, #2B196B, #211867);
+    position: relative;
+}
+
+.mountain {
+    width: 0;
+	height: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.m1 {
+    height: 500px;
+    width: 650px;
+    clip-path: polygon(0% 100%, 50% 0%, 110% 110%);
+    background-image: linear-gradient(
+        rgba(33, 24, 103, .5) 17%, 
+        rgba(33, 24, 103, .6) 20%, 
+        rgba(33, 24, 103, .7) 25%, 
+        rgba(33, 24, 103, .8) 34%, 
+        rgba(33, 24, 103, .9) 40%, 
+        rgba(33, 24, 103, 1) 48%);
+    left: -70px;
+}
+
+.m2 {
+    height: 560px;
+    width: 700px;
+    clip-path: polygon(0% 100%, 50% 0%, 110% 110%);
+    background-image: linear-gradient(
+        rgba(33, 24, 103, .5) 10%,
+        rgba(33, 24, 103, .3) 20%,
+        rgba(33, 24, 103, .1) 30%,
+        rgba(33, 24, 103, 0) 38%);
+    left: -300px;
+}
+
+.m3 {
+    height: 400px;
+    width: 600px;
+    clip-path: polygon(0% 100%, 50% 0%, 110% 110%);
+    background-image: linear-gradient(
+        rgba(33, 24, 103, .5) 10%, 
+        rgba(33, 24, 103, .7) 15%, 
+        rgba(33, 24, 103, .8) 18%, 
+        rgba(33, 24, 103, .9) 20%, 
+        rgba(33, 24, 103, 1) 30%);
+    left: -250px;
+}
+
+.m4 {
+    height: 600px;
+    width: 750px;
+    clip-path: polygon(0% 100%, 50% 0%, 110% 110%);
+    background-image: linear-gradient(
+        rgba(33, 24, 103, .5) 20%,
+        rgba(33, 24, 103, .3) 40%,
+        rgba(33, 24, 103, .1) 50%,
+        rgba(33, 24, 103, 0) 60%);
+    left: 80px;
+}
+
+.m5 {
+    height: 650px;
+    width: 900px;
+    clip-path: polygon(0% 100%, 50% 0%, 110% 110%);
+    background-image: linear-gradient(
+        rgba(33, 24, 103, .5) 20%, 
+        rgba(33, 24, 103, .7) 40%, 
+        rgba(33, 24, 103, .8) 50%, 
+        rgba(33, 24, 103, .9) 55%); 
+    left: 270px;
+}
+
+.m6 {
+    clip-path: polygon(0% 100%, 50% 0%, 110% 110%);
+}
+
+.m7 {
+    height: 600px;
+    width: 800px;
+    clip-path: polygon(0% 100%, 50% 0%, 110% 110%);
+    background-image: linear-gradient(
+        rgba(33, 24, 103, .5) 10%, 
+        rgba(33, 24, 103, 0.7) 20%, 
+        rgba(33, 24, 103, .8) 25%, 
+        rgba(33, 24, 103, .9) 30%, 
+        rgba(33, 24, 103, 1) 40%);
+    right: 210px;
+    z-index: 2;
+}
+
+.m8 {
+    height: 530px;
+    width: 750px;
+    clip-path: polygon(0% 100%, 50% 0%, 110% 110%);
+    background-image: linear-gradient(
+        rgba(33, 24, 103, .6) 3%,
+        rgba(33, 24, 103, .5) 5%,
+        rgba(33, 24, 103, .4) 7%,
+        rgba(33, 24, 103, .3) 10%,
+        rgba(70, 30, 130, .8) 15%,
+        rgba(72, 32, 130, 1) 20%,
+        rgba(77, 36, 130, 1) 90%);
+    right: -30px;
+}
+
+.m9 {
+    height: 660px;
+    width: 900px;
+    clip-path: polygon(0% 100%, 50% 0%, 110% 110%);
+    background-image: linear-gradient(
+        rgba(33, 24, 103, .6) 10%,
+        rgba(33, 24, 103, .4) 20%,
+        rgba(70, 30, 130, .8) 26%,
+        rgba(72, 32, 130, 1) 30%,
+        rgba(77, 36, 130, 1) 90%);
+    right: -280px;
+}
+
+.m10 {
+    height: 450px;
+    width: 600px;
+    clip-path: polygon(0% 100%, 50% 0%, 110% 110%);
+    background-image: linear-gradient(
+        rgba(33, 24, 103, .5) 10%, 
+        rgba(33, 24, 103, .7) 20%, 
+        rgba(33, 24, 103, .8) 30%, 
+        rgba(33, 24, 103, .9) 40%, 
+        rgba(33, 24, 103, 1) 48%);
+    right: -150px;
+}
+
+.login-card {
+    width: 800px;
+    height: 900px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 3;
+}
