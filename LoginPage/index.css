@@ -291,6 +291,19 @@ body {
     font-weight: 200;
 }
 
+.login-button {
+    height: 38px;
+    width: 110px;
+    border-radius: 18px;
+    border: none;
+    color: rgb(45, 62, 80);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 15px;
+    background-image: linear-gradient(to right,  #17DEFD, #5F94F0, #9360E9);
+}
+
 .landscape {
     height: 440px;
     background-image: linear-gradient(
