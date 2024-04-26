@@ -2,6 +2,13 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    /* jest overflow przez właściwości clip-path. 
+    Ta właściwość określa obszar, który ma być widoczny, 
+    a wszystko poza nim zostanie ukryte. Jednakże, ponieważ 
+    elementy mają różne wartości left i right, które wysuwają je 
+    poza granice .main-container, nadmiar treści będzie 
+    wykraczał poza te granice i spowoduje overflow na osi x.*/
+    overflow-x: hidden;
 }
 
 .main-container {
@@ -117,7 +124,7 @@ body {
 .m9 {
     height: 660px;
     width: 900px;
-    clip-path: polygon(0% 100%, 50% 0%, 110% 110%);
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
     background-image: linear-gradient(
         rgba(33, 24, 103, .6) 10%,
         rgba(33, 24, 103, .4) 20%,
@@ -130,7 +137,7 @@ body {
 .m10 {
     height: 450px;
     width: 600px;
-    clip-path: polygon(0% 100%, 50% 0%, 110% 110%);
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
     background-image: linear-gradient(
         rgba(33, 24, 103, .5) 10%, 
         rgba(33, 24, 103, .7) 20%, 
@@ -143,7 +150,6 @@ body {
 .login-card {
     width: 800px;
     height: 900px;
-    background-color: white;
     position: absolute;
     top: 50%;
     right: 50%;
