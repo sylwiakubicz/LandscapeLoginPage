@@ -18,14 +18,14 @@ body {
     position: relative;
 }
 
-.mountain {
+.background .mountain {
     width: 0;
 	height: 0;
     position: absolute;
     bottom: 0;
 }
 
-.m1 {
+.background .m1 {
     height: 500px;
     width: 650px;
     clip-path: polygon(0% 100%, 50% 0%, 110% 110%);
@@ -39,7 +39,7 @@ body {
     left: -70px;
 }
 
-.m2 {
+.background .m2 {
     height: 560px;
     width: 700px;
     clip-path: polygon(0% 100%, 50% 0%, 110% 110%);
@@ -51,7 +51,7 @@ body {
     left: -300px;
 }
 
-.m3 {
+.background .m3 {
     height: 400px;
     width: 600px;
     clip-path: polygon(0% 100%, 50% 0%, 110% 110%);
@@ -64,7 +64,7 @@ body {
     left: -250px;
 }
 
-.m4 {
+.background .m4 {
     height: 600px;
     width: 750px;
     clip-path: polygon(0% 100%, 50% 0%, 110% 110%);
@@ -76,7 +76,7 @@ body {
     left: 80px;
 }
 
-.m5 {
+.background .m5 {
     height: 650px;
     width: 900px;
     clip-path: polygon(0% 100%, 50% 0%, 110% 110%);
@@ -88,11 +88,11 @@ body {
     left: 270px;
 }
 
-.m6 {
+.background .m6 {
     clip-path: polygon(0% 100%, 50% 0%, 110% 110%);
 }
 
-.m7 {
+.background .m7 {
     height: 600px;
     width: 800px;
     clip-path: polygon(0% 100%, 50% 0%, 110% 110%);
@@ -106,7 +106,7 @@ body {
     z-index: 2;
 }
 
-.m8 {
+.background .m8 {
     height: 530px;
     width: 750px;
     clip-path: polygon(0% 100%, 50% 0%, 110% 110%);
@@ -121,7 +121,7 @@ body {
     right: -30px;
 }
 
-.m9 {
+.background .m9 {
     height: 660px;
     width: 900px;
     clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
@@ -134,7 +134,7 @@ body {
     right: -280px;
 }
 
-.m10 {
+.background .m10 {
     height: 450px;
     width: 600px;
     clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
@@ -421,4 +421,125 @@ body {
         #47227F 50%,
         #4F2684 60%,
         #663092);
+    position: relative;
+    overflow: hidden;
+}
+
+.landscape-mountains .mountain {
+    width: 0;
+	height: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.landscape-mountains .m1 {
+    height: 150px;
+    width: 200px;
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+    background-image: linear-gradient(
+        rgba(33, 24, 103, .8) 10%,
+        rgba(33, 24, 103, .4) 20%,
+        rgba(70, 30, 130, .8) 26%,
+        rgba(72, 32, 130, 1) 30%,
+        rgba(77, 36, 130, 1) 90%);
+    left: -70px;
+    z-index: 2;
+}
+
+.landscape-mountains .m2 {
+    height: 140px;
+    width: 200px;
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+    background-image: linear-gradient(
+        rgba(33, 24, 103, .8) 10%,
+        rgba(33, 24, 103, .4) 20%,
+        rgba(70, 30, 130, .8) 26%,
+        rgba(72, 32, 130, 1) 30%,
+        rgba(77, 36, 130, 1) 90%);
+    left: 0;
+    z-index: 2;
+}
+
+.landscape-mountains .m3 {
+    height: 200px;
+    width: 330px;
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+    background-image: linear-gradient(
+        rgba(33, 24, 103, .8) 10%,
+        rgba(33, 24, 103, .4) 20%,
+        rgba(70, 30, 130, .8) 26%,
+        rgba(72, 32, 130, 1) 30%,
+        rgba(77, 36, 130, 1) 90%);
+    left: 50px;
+    z-index: 2;
+}
+
+.landscape-mountains .m4 {
+    height: 250px;
+    width: 350px;
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+    background-image: linear-gradient(
+        rgba(33, 24, 103, .8) 10%,
+        rgba(33, 24, 103, .4) 20%,
+        rgba(70, 30, 130, .8) 26%,
+        rgba(72, 32, 130, 1) 30%,
+        rgba(77, 36, 130, 1) 90%);
+    left: -40px;
+    z-index: 1;
+}
+
+
+.landscape-mountains .m5 {
+    height: 250px;
+    width: 280px;
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+    background-image: linear-gradient(
+        rgba(33, 24, 103, .8) 10%,
+        rgba(33, 24, 103, .4) 20%,
+        rgba(70, 30, 130, .8) 26%,
+        rgba(72, 32, 130, 1) 30%,
+        rgba(77, 36, 130, 1) 90%);
+    left: 190px;
+    z-index: 1;
+}
+
+.landscape-mountains .m6 {
+    height: 350px;
+    width: 350px;
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+    background-image: linear-gradient(
+        rgba(33, 24, 103, .8) 10%,
+        rgba(33, 24, 103, .4) 20%,
+        rgba(70, 30, 130, .8) 26%,
+        rgba(72, 32, 130, 1) 30%,
+        rgba(77, 36, 130, 1) 90%);
+    left: 260px;
+    z-index: 1;
+}
+
+.landscape-mountains .m7 {
+    height: 190px;
+    width: 250px;
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+    background-image: linear-gradient(
+        rgba(33, 24, 103, .8) 10%,
+        rgba(33, 24, 103, .4) 20%,
+        rgba(70, 30, 130, .8) 26%,
+        rgba(72, 32, 130, 1) 30%,
+        rgba(77, 36, 130, 1) 90%);
+    right: -10px;
+    z-index: 2;
+}
+
+.landscape-mountains .m8 {
+    height: 150px;
+    width: 150px;
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+    background-image: linear-gradient(
+        rgba(33, 24, 103, .8) 10%,
+        rgba(33, 24, 103, .4) 20%,
+        rgba(70, 30, 130, .8) 26%,
+        rgba(72, 32, 130, 1) 30%,
+        rgba(77, 36, 130, 1) 90%);
+    right: -40px;
 }
