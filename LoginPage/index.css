@@ -147,6 +147,20 @@ body {
     right: -150px;
 }
 
+
+.login-card {
+    width: 700px;
+    height: 800px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 3;
+    box-shadow: 5px 15px 50px rgba(28, 20, 83, .9), 
+                -5px 15px 50px rgba(28, 20, 83, .9),
+                0 20px 30px -10px rgb(11, 8, 31);
+}
+
 .circle {
     width: 51px;
     height: 51px;
@@ -175,6 +189,47 @@ body {
 .a2 {
     transform: rotate(-45deg);
     left: 19px;
+}
+
+.login-container {
+    height: 325px;
+    background-color: rgb(45, 62, 80);
+    padding-top: 45px;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.login-title {
+    color: white;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.login-input {
+    width: 350px;
+    height: 30px;
+    background-color: #22303D;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 20px;
+    color: white;
+    position: relative;
+    box-shadow: 3px 3px 10px #1b2731;
+    padding: 3px 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.login-input:focus {
+    outline: none;
 }
 
 .user-icon {
@@ -230,61 +285,6 @@ body {
     right: -6px; 
 }
 
-.login-card {
-    width: 700px;
-    height: 800px;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-    z-index: 3;
-    box-shadow: 5px 15px 50px rgba(28, 20, 83, .9), 
-                -5px 15px 50px rgba(28, 20, 83, .9),
-                0 20px 30px -10px rgb(11, 8, 31);
-}
-
-.login-container {
-    height: 325px;
-    background-color: rgb(45, 62, 80);
-    padding-top: 45px;
-}
-
-.login-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-}
-
-.login-title {
-    color: white;
-    font-size: 30px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.login-input {
-    width: 350px;
-    height: 30px;
-    background-color: #22303D;
-    border: 1px solid rgba(255, 255, 255, .2);
-    border-radius: 20px;
-    color: white;
-    position: relative;
-    box-shadow: 3px 3px 10px #1b2731;
-    padding: 3px 40px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 200;
-    letter-spacing: 1px;
-    position: relative;
-}
-
-.login-input:focus {
-    outline: none;
-}
-
 .login-options {
     display: flex;
     color: white;
@@ -296,9 +296,100 @@ body {
     font-weight: 200;
 }
 
+.login-link {
+    transition: all ease-in-out .3s;
+}
+
 .login-link:hover {
     cursor: pointer;
-    color: rgb(223, 223, 223);
+    background: -webkit-linear-gradient(45deg, #17DEFD, #5F94F0, #9360E9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;    
+}
+
+/* CHECKBOX STYLING */
+.checkbox-container {
+    position: relative;
+    padding-left: 25px;
+}
+
+.login-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    box-sizing: border-box;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(45, 62, 80);
+    border-style: solid;
+    border-width: 2px;
+    border-image: linear-gradient(45deg, #17DEFD, #5F94F0, #9360E9) 1;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+.checkmark:hover {
+    transform: rotate(45deg);
+}
+
+.checkbox-container .login-checkbox:checked ~ .checkmark {
+    border-radius: 50px; 
+    border: 10px solid transparent; 
+    background: linear-gradient(45deg,#17DEFD, #5F94F0, #9360E9) border-box; 
+    -webkit-mask:
+        linear-gradient(#fff 0 0) padding-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    transform: rotate(360deg);
+    top: -2px;
+}
+
+.checkmark::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-color: rgb(45, 62, 80);
+    transition: all ease-in-out .3s;
+}
+
+.checkbox-container .login-checkbox:checked ~ .checkmark::before {
+    border-radius: 50%;
+    top: -8px;
+    left: -8px;
+}
+
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: -6px;
+    left: -3px;
+    width: 4px;
+    height: 8px;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    border-image: linear-gradient(45deg, #17DEFD, #5F94F0, #9360E9) 1;
+    border-color: white;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkbox-container .login-checkbox:checked ~ .checkmark::after {
+    display: block;
 }
 
 .login-button {
@@ -312,6 +403,13 @@ body {
     font-style: bold;
     font-size: 15px;
     background-image: linear-gradient(to right,  #17DEFD, #5F94F0, #9360E9);
+    cursor: pointer;
+    transition: all ease-in .3s;
+}
+
+.login-button:hover {
+    box-shadow: 5px 5px 15px #22303D;
+    transform: scale(1.05);
 }
 
 .landscape {
