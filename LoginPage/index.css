@@ -170,6 +170,7 @@ body {
     top: 415px;
     right: 325px;
     box-shadow: 0 0 2px rgb(255, 255, 253);
+    z-index: 10;
 }
 
 .arrow {
@@ -437,13 +438,12 @@ body {
     width: 200px;
     clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
     background-image: linear-gradient(
-        rgba(33, 24, 103, .8) 10%,
-        rgba(33, 24, 103, .4) 20%,
-        rgba(70, 30, 130, .8) 26%,
-        rgba(72, 32, 130, 1) 30%,
-        rgba(77, 36, 130, 1) 90%);
+        #1C1563 8%,
+        #45227E 57%,
+        #643094 99%
+    );
     left: -70px;
-    z-index: 2;
+    z-index: 7;
 }
 
 .landscape-mountains .m2 {
@@ -451,13 +451,12 @@ body {
     width: 200px;
     clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
     background-image: linear-gradient(
-        rgba(33, 24, 103, .8) 10%,
-        rgba(33, 24, 103, .4) 20%,
-        rgba(70, 30, 130, .8) 26%,
-        rgba(72, 32, 130, 1) 30%,
-        rgba(77, 36, 130, 1) 90%);
+        #1C1563 4%,
+        #45227E 53%,
+        #643094 97%
+    );
     left: 0;
-    z-index: 2;
+    z-index: 7;
 }
 
 .landscape-mountains .m3 {
@@ -465,13 +464,13 @@ body {
     width: 330px;
     clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
     background-image: linear-gradient(
-        rgba(33, 24, 103, .8) 10%,
-        rgba(33, 24, 103, .4) 20%,
-        rgba(70, 30, 130, .8) 26%,
-        rgba(72, 32, 130, 1) 30%,
-        rgba(77, 36, 130, 1) 90%);
+        #1B1462,
+        #1C1563,
+        #45227E,
+        #643094
+    );
     left: 50px;
-    z-index: 2;
+    z-index: 7;
 }
 
 .landscape-mountains .m4 {
@@ -479,42 +478,43 @@ body {
     width: 350px;
     clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
     background-image: linear-gradient(
-        rgba(33, 24, 103, .8) 10%,
-        rgba(33, 24, 103, .4) 20%,
-        rgba(70, 30, 130, .8) 26%,
-        rgba(72, 32, 130, 1) 30%,
-        rgba(77, 36, 130, 1) 90%);
+        #201766,
+        #341D75,
+        #4F2787
+    );
     left: -40px;
-    z-index: 1;
+    z-index: 5;
+    opacity: .7;
 }
-
 
 .landscape-mountains .m5 {
     height: 250px;
     width: 280px;
     clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
     background-image: linear-gradient(
-        rgba(33, 24, 103, .8) 10%,
-        rgba(33, 24, 103, .4) 20%,
-        rgba(70, 30, 130, .8) 26%,
-        rgba(72, 32, 130, 1) 30%,
-        rgba(77, 36, 130, 1) 90%);
+    rgba(27, 20, 98, .8) 5%,
+    #1B1462 10%,
+    #1C1563 18%,
+    #3C2077 44%,
+    #45227E 70%,
+    #643094 80%
+);
     left: 190px;
-    z-index: 1;
 }
 
 .landscape-mountains .m6 {
     height: 350px;
     width: 350px;
     clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
-    background-image: linear-gradient(
-        rgba(33, 24, 103, .8) 10%,
-        rgba(33, 24, 103, .4) 20%,
-        rgba(70, 30, 130, .8) 26%,
-        rgba(72, 32, 130, 1) 30%,
-        rgba(77, 36, 130, 1) 90%);
+    background-image:  linear-gradient(
+        rgba(27, 20, 98, .8),
+        #1B1462 ,
+        #1C1563,
+        #3C2077,
+        #45227E,
+        #643094
+    );
     left: 260px;
-    z-index: 1;
 }
 
 .landscape-mountains .m7 {
@@ -522,13 +522,11 @@ body {
     width: 250px;
     clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
     background-image: linear-gradient(
-        rgba(33, 24, 103, .8) 10%,
-        rgba(33, 24, 103, .4) 20%,
-        rgba(70, 30, 130, .8) 26%,
-        rgba(72, 32, 130, 1) 30%,
-        rgba(77, 36, 130, 1) 90%);
+        rgba(28, 21, 99, 1),
+        rgba(69, 34, 126, 1),
+        rgba(100, 48, 148, 1)
+    );
     right: -10px;
-    z-index: 2;
 }
 
 .landscape-mountains .m8 {
@@ -536,10 +534,14 @@ body {
     width: 150px;
     clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
     background-image: linear-gradient(
-        rgba(33, 24, 103, .8) 10%,
-        rgba(33, 24, 103, .4) 20%,
-        rgba(70, 30, 130, .8) 26%,
-        rgba(72, 32, 130, 1) 30%,
-        rgba(77, 36, 130, 1) 90%);
+        rgba(28, 21, 99, 1) 5%,
+        rgba(69, 34, 126,  1) 33%,
+        rgba(100, 48, 148, 1) 100%
+    );
     right: -40px;
+} 
+
+.opacity {
+    z-index: 6;
+    opacity: .9;
 }
