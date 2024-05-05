@@ -1161,13 +1161,19 @@ body {
     -o-transform: scaleX(-1.25);
     -ms-transform: scaleX(-1.25);
     transform: scaleX(-1.25);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 170%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 170%);
 }
 
 .cloud-7 .c1 {
     height: 120px;
     width: 80px; 
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    background-color: blue;
+    background-image: linear-gradient(28deg, 
+    rgb(211, 228, 248) 20%,
+    rgb(98, 150, 214) 60%,
+    rgb(45, 48, 146) 100%
+    );
     left: -15px;
     top: 0px;
     transform: rotate(150deg);
@@ -1177,7 +1183,12 @@ body {
     height: 60px;
     width: 66px;
     border-radius: 48% 52% 0 53% / 50% 0% 0 50%;
-    background-color: blue;
+    background-image: linear-gradient(
+        80deg,
+        white -10%,
+        rgb(98, 150, 214) 50%,
+        rgb(45, 48, 146) 120%
+    );
     left: 60px;
     top: 40px;
     transform: rotate(100deg);
@@ -1187,7 +1198,12 @@ body {
     height: 84px;
     width: 75px;
     border-radius:  52% 48% 50% 50% / 60% 59% 41% 40%;
-    background-color: blue;
+    background-image: linear-gradient(
+        -70deg, 
+        white -10%,
+        rgb(98, 150, 214) 30%,
+        rgb(45, 48, 146) 100%
+    );
     left: 100px;
     top: 50px;
     transform: rotate(-110deg);
@@ -1196,7 +1212,10 @@ body {
 .cloud-7 .c4 {
     height: 62.5px;
     width: 41.25px; 
-    background-color: blue;
+    background-image: linear-gradient(
+        rgb(98, 150, 214) -10%,
+        rgb(45, 48, 146) 130%
+    );
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     left: 160px;
     top: 65px;
@@ -1206,7 +1225,11 @@ body {
 .cloud-7 .c5 {
     height: 40px;
     width: 31.25px;
-    background-color: blue;
+    background-image: linear-gradient(
+        140deg,
+        rgb(98, 150, 214) 0%,
+        rgb(45, 48, 146) 140%
+    );
     border-radius: 48% 52% 47% 53% / 45% 44% 56% 55%;
     left: 185px;
     top: 70px;
@@ -1216,7 +1239,11 @@ body {
 .cloud-7 .c6 {
     height: 37.5px;
     width: 25px; 
-    background-color: blue;
+    background-image: linear-gradient(
+        140deg,
+        rgb(98, 150, 214) -10%,
+        rgb(45, 48, 146) 120%
+    );
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     left: 205px;
     top: 80px;
@@ -1226,7 +1253,10 @@ body {
 .cloud-7 .c7 {
     height: 41.25px; 
     width: 33.75px;
-    background-color: blue;
+    background-image: linear-gradient(
+        rgb(98, 150, 214) -20%,
+        rgb(45, 48, 146) 100%
+    );
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     left: 225px;
     top: 88px;
@@ -1239,20 +1269,22 @@ body {
     left: 250px;
     overflow: hidden;
     height: 57px;
-    opacity: .9;
     z-index: 3;
+    filter: brightness(1.4);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 130%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 130%);
+
 }
 
 .cloud-8 .c1 {
     height: 80px;
     width: 60px;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    /* background-image: linear-gradient(280deg, 
-    #d1e3f8 -17%,
-    #426FA6 55%,
-    #303382 90%
-        ); */
-    background-color: #17DEFD;
+    background-image: linear-gradient(275deg, 
+    rgb(211, 228, 248) 25%,
+    rgb(98, 150, 214) 60%,
+    rgb(45, 48, 146) 90%
+        );
     left: -10px;
     transform: rotate(-100deg);
 }
@@ -1260,16 +1292,15 @@ body {
 .cloud-8 .c2 {
     height: 57px;
     width: 44px;
-    /* background-image: linear-gradient(
+    background-image: linear-gradient(
         308deg, 
-        #d1e3f8 -30%,
-        #426FA6 40%,
-        #303382 80%
-    ); */
-    background-color: #17DEFD;
+        white -10%,
+        rgb(98, 150, 214) 45%,
+        rgb(45, 48, 146) 75%
+    );
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     left: 45px;
-    top: 25px;
+    top: 20px;
     transform: rotate(-128deg);
     z-index: 2;
 }
@@ -1277,16 +1308,15 @@ body {
 .cloud-8 .c3 {
     height: 44px;
     width: 31px;
-    /* background-image: linear-gradient(
-        5deg, 
-        #d1e3f8 -40%,
-        #426FA6 30%,
-        #303382 100%
-    ); */
-    background-color: #17DEFD;
+    background-image: linear-gradient(
+        80deg, 
+        white -20%,
+        rgb(98, 150, 214) 35%,
+        rgb(45, 48, 146) 100%
+    );
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    left: 90px;
-    top: 30px;
+    left: 92px;
+    top: 28px;
     transform: rotate(100deg);
     z-index: 2;
 }
@@ -1294,49 +1324,42 @@ body {
 .cloud-8 .c4 {
     height: 26px;
     width: 22px;
-    /* background-image: linear-gradient(
+    background-image: linear-gradient(
         320deg, 
-        #d1e3f8 -45%,
-        #426FA6 8%,
-        #303382 55%
-    ); */
-    background-color: #17DEFD;
+        rgb(98, 150, 214) 10%,
+        rgb(45, 48, 146) 100%
+    );
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     left: 115px;
     top: 45px;
     transform: rotate(-130deg);
 }
 
-.cloud-8 .c5 {
-    height: 33px;
-    width: 22px;
-    background-color: #17DEFD;
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    left: 134px;
-    top: -162px;
-    transform: rotate(-30deg);
-} 
-
-
 .cloud-9 {
     position: relative;
-    top: -455px;
+    top: -445px;
     overflow: hidden;
     height: 57px;
-    opacity: .9;
     -webkit-transform: scaleX(-1);
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -ms-transform: scaleX(-1);
     transform: scaleX(-1);
     z-index: 3;
+    filter: brightness(1.2);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 110%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 110%);
 }
 
 .cloud-9 .c1 {
     height: 50px;
     width: 50px;
     border-radius: 50% ;
-    background-color: blue;
+    background-image: linear-gradient(
+        white -50%,
+        rgb(98, 150, 214) 20%,
+        rgb(45, 48, 146) 70%
+    );
     top: 26px;
     left: -8px;
 }
@@ -1345,7 +1368,12 @@ body {
     height: 53px;
     width: 46px;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    background-color: blue;
+    background-image: linear-gradient(
+        350deg, 
+        white -20%,
+        rgb(98, 150, 214) 30%,
+        rgb(45, 48, 146) 80%
+    );
     top: 20px;
     left: 35px;
     transform: rotate(-170deg);
@@ -1355,7 +1383,11 @@ body {
     height: 90px;
     width: 70px;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    background-color: blue;
+    background-image: linear-gradient(55deg, 
+    rgb(211, 228, 248) 5%,
+    rgb(98, 150, 214) 45%,
+    rgb(45, 48, 146) 70%
+        );
     left: 78px;
     top: -5px;
     transform: rotate(125deg);
@@ -1364,7 +1396,12 @@ body {
 .cloud-9 .c4 {
     height: 59px;
     width: 48px;
-    background-color: blue;
+    background-image: linear-gradient(
+        280deg, 
+        white -25%,
+        rgb(98, 150, 214) 40%,
+        rgb(45, 48, 146) 90%
+    );
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     left: 148px;
     top: 10px;
@@ -1375,7 +1412,12 @@ body {
 .cloud-9 .c5 {
     height: 54px;
     width: 41px;
-    background-color: blue;
+    background-image: linear-gradient(
+        80deg, 
+        white -20%,
+        rgb(98, 150, 214) 25%,
+        rgb(45, 48, 146) 90%
+    );
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     left: 195px;
     top: 20px;
@@ -1386,7 +1428,12 @@ body {
 .cloud-9 .c6 {
     height: 26px;
     width: 22px;
-    background-color: blue;
+    background-image: linear-gradient(
+        320deg, 
+        rgb(98, 150, 214) 20%,
+        rgb(45, 48, 146) 100%
+    );
+
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     left: 236px;
     top: 35px;
@@ -1396,7 +1443,11 @@ body {
 .cloud-9 .c7 {
     height: 33px;
     width: 22px;
-    background-color: blue;
+    background-image: linear-gradient(
+        90deg, 
+        rgb(98, 150, 214) -10%,
+        rgb(45, 48, 146) 100%
+    );
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     left: 258px;
     top: 36px;
@@ -1416,13 +1467,21 @@ body {
     -ms-transform: scaleX(-1.25);
     transform: scaleX(-1.25);
     z-index: 2;
+    filter: brightness(1.4);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) -10%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) -10%, rgba(0, 0, 0, 0) 100%);
 }
 
 .cloud-10 .c1 {
     height: 80px;
     width: 30px;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    background-color: red;
+    background-image: linear-gradient(
+        -25deg,
+        white -80%,
+        rgb(98, 150, 214) 10%,
+        rgb(45, 48, 146) 70%
+    );
     top: 40px;
     left: 0;
     transform: rotate(195deg);
@@ -1432,7 +1491,11 @@ body {
     height: 82px;
     width: 50px;
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    background-color: red;
+    background-image: linear-gradient(
+        white -40%,
+        rgb(98, 150, 214) 10%,
+        rgb(45, 48, 146) 80%
+    );
     top: 32px;
     left: 20px;
 }
@@ -1441,7 +1504,11 @@ body {
     height: 120px;
     width: 80px; 
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    background-color: red;
+    background-image: linear-gradient(30deg, 
+    white 0%,
+    rgb(98, 150, 214) 37%,
+    rgb(45, 48, 146) 75%
+        );
     left: 60px;
     top: 0px;
     transform: rotate(150deg);
@@ -1451,7 +1518,12 @@ body {
     height: 60px;
     width: 66px;
     border-radius: 48% 52% 0 53% / 50% 0% 0 50%;
-    background-color: red;
+    background-image: linear-gradient(
+    75deg, 
+        white -30%,
+        rgb(98, 150, 214) 15%,
+        rgb(45, 48, 146) 80%
+    );
     left: 125px;
     top: 40px;
     transform: rotate(100deg);
@@ -1461,7 +1533,12 @@ body {
     height: 84px;
     width: 75px;
     border-radius:  52% 48% 50% 50% / 60% 59% 41% 40%;
-    background-color: red;
+    background-image: linear-gradient(
+        -70deg, 
+        white -60%,
+        rgb(98, 150, 214) 5%,
+        rgb(45, 48, 146) 50%
+    );
     left: 170px;
     top: 50px;
     transform: rotate(-110deg);
@@ -1470,7 +1547,10 @@ body {
 .cloud-10 .c6 {
     height: 62.5px;
     width: 41.25px; 
-    background-color: red;
+    background-image: linear-gradient(
+        rgb(98, 150, 214) -20%,
+        rgb(45, 48, 146) 40%
+    );
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     left: 240px;
     top: 65px;
@@ -1479,7 +1559,10 @@ body {
 .cloud-10 .c7 {
     height: 40px;
     width: 31.25px;
-    background-color: red;
+    background-image: linear-gradient(
+        rgb(98, 150, 214) -20%,
+        rgb(45, 48, 146)40%
+    );
     border-radius: 48% 52% 47% 53% / 45% 44% 56% 55%;
     left: 275px;
     top: 70px;
@@ -1499,13 +1582,20 @@ body {
     -ms-transform: scaleX(-1.25);
     transform: scaleX(-1.25);
     z-index: 1;
+    filter: brightness(1.3);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 180%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 100%);
 }
 
 .cloud-11 .c1 {
     height: 60px;
     width: 66px;
     border-radius: 48% 52% 0 53% / 50% 0% 0 50%;
-    background-color: green;
+    background-image: linear-gradient(80deg, 
+    rgb(211, 228, 248) 15%,
+    rgb(98, 150, 214) 45%,
+    rgb(45, 48, 146) 90%
+        );
     left: 125px;
     top: 40px;
     transform: rotate(100deg);
@@ -1515,7 +1605,12 @@ body {
     height: 84px;
     width: 75px;
     border-radius:  52% 48% 50% 50% / 60% 59% 41% 40%;
-    background-color: green;
+    background-image: linear-gradient(
+    -60deg, 
+        white -10%,
+        rgb(98, 150, 214) 35%,
+        rgb(45, 48, 146) 65%
+    );
     left: 170px;
     top: 50px;
     transform: rotate(-110deg);
@@ -1524,7 +1619,11 @@ body {
 .cloud-11 .c3 {
     height: 62.5px;
     width: 41.25px; 
-    background-color: green;
+    background-image: linear-gradient(
+        white -50%,
+        rgb(98, 150, 214) 25%,
+        rgb(45, 48, 146) 100%
+    );
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
     left: 240px;
     top: 65px;
@@ -1533,7 +1632,10 @@ body {
 .cloud-11 .c4 {
     height: 40px;
     width: 31.25px;
-    background-color: green;
+    background-image: linear-gradient(
+        rgb(98, 150, 214) 25%,
+        rgb(45, 48, 146) 130%
+    );
     border-radius: 48% 52% 47% 53% / 45% 44% 56% 55%;
     left: 275px;
     top: 70px;
