@@ -1,3 +1,5 @@
+<h2>Preview Section</h2>
+  <img src="https://github.com/sylwiakubicz/Small_Projects/assets/121672102/18f8251f-0f79-4bd5-aad4-abdaa36ad033">
 <h2>Project desription</h2>
   <p>This project is a web page containing a login form, created exclusively using HTML5 and CSS. The login form consists of basic input fields for entering data,
   a submit button styled with a gradient, and a custom checkbox input. The appearance of the checkbox input changes depending on its state (hover, checked, unchecked),
@@ -21,7 +23,5 @@
   <li>CSS</li>
 <h2>Author</h2>
   <p>Project made by Sylwia Kubicz</p>
-<h2>Preview Section</h2>
-  <img src="https://github.com/sylwiakubicz/Small_Projects/assets/121672102/18f8251f-0f79-4bd5-aad4-abdaa36ad033">
 <h2>License</h2>
   <p>Copyright ©  2010-2024 Freepik Company S.L. All rights reserved.</p>
