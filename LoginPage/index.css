@@ -9,6 +9,7 @@ body {
     poza granice .main-container, nadmiar treści będzie 
     wykraczał poza te granice i spowoduje overflow na osi x.*/
     overflow-x: hidden;
+    background-attachment: fixed;
 }
 
 .main-container {
