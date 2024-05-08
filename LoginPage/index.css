@@ -2050,3 +2050,23 @@ body {
     z-index: 4;
     filter: blur(1px);
 }
+
+h2 {
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+a:hover {
+    cursor: pointer;
+    background: -webkit-linear-gradient(45deg, #17DEFD, #5F94F0, #9360E9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;    
+}
