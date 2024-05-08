@@ -305,6 +305,7 @@ body {
     cursor: pointer;
     background: -webkit-linear-gradient(45deg, #17DEFD, #5F94F0, #9360E9);
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;    
 }
 
@@ -345,11 +346,6 @@ body {
     border-radius: 50px; 
     border: 10px solid transparent; 
     background: linear-gradient(45deg,#17DEFD, #5F94F0, #9360E9) border-box; 
-    /* -webkit-mask:
-        linear-gradient(#fff 0 0) padding-box, 
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-            mask-composite: exclude; */
     transform: rotate(360deg);
     top: -2px;
 }
