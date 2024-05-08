@@ -7,6 +7,7 @@
   <p>Every element on the page, including the landscape, is created from basic HTML elements and styled accordingly using CSS. The landscape is composed of div 
     elements, styled using various techniques such as clip-path, border, linear and radial gradients, transparency, and masking. Elements are positioned on the page using the position: absolute and relative properties.</p>
   <p>This project aimed to learn the basic syntax of CSS and demonstrate how it can be used to create more complex elements.</p>
+  <p> Page is design by <a href="https://www.freepik.com/free-vector/log-landing-page-with-colorful-flat-landscape_5414259.htm#query=website%20login%20page&position=26&from_view=keyword&track=ais&uuid=cc91f1e8-0531-4c01-a4c9-7c2019d953eb">Freepik</a>.</p>
 <h2>What I've learned</h2>
   <p>Throughout the creation of this project, I've learned:</p>
   <li>How to utilize linear and radial gradients to create background elements.</li>
@@ -23,5 +24,3 @@
   <li>CSS</li>
 <h2>Author</h2>
   <p>Project made by Sylwia Kubicz</p>
-<h2>License</h2>
-  <p>Copyright ©  2010-2024 Freepik Company S.L. All rights reserved.</p>
