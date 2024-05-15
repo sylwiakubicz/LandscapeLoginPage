@@ -20,7 +20,7 @@
   <br>
   <p>This project has provided me with valuable insights into styling and animating web pages, enhancing my understanding of CSS capabilities and fostering a more creative approach to user interface design.</p>
 <h2>Technologies Used</h2>
-  <li>HTML</li>
+  <li>HTML5</li>
   <li>CSS</li>
 <h2>Author</h2>
   <p>Project made by Sylwia Kubicz</p>
